@@ -1,10 +1,7 @@
-import './App.css';
+// Google Auth clientId: 1014906163867-ed5qfmsojoq8roa72e3cpunfat04f50k.apps.googleusercontent.com
 
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
-}
+const App = () => (
+  <div className="App" />
+);
 
 export default App;
