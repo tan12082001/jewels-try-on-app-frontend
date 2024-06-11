@@ -22,8 +22,8 @@ body {
 }
 
 #root {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 .App {
@@ -31,4 +31,24 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.navigation-bar-outer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.app-main-content-outer {
+  flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+  .App {
+    flex-direction: row;
+  }
+
+  .navigation-bar-outer {
+    flex-direction: column;
+  }
 }

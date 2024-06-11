@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import './booking.css';
-import './contact.css';
-import './details.css';
-import './landing.css';
-import './list.css';
+import './styles/index.css';
+import './styles/booking.css';
+import './styles/contact.css';
+import './styles/details.css';
+import './styles/landing.css';
+import './styles/list.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 
