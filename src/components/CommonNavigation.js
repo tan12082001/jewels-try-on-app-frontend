@@ -12,6 +12,7 @@ const CommonNavigation = () => {
           ? (<div className="google-signin-button">SignIn</div>)
           : (
             <div className="common-nav-items">
+              <div className="user-landing-page">Home</div>
               <div className="user-profile-icon">MyProfile</div>
               <div className="user-logout-button">Logout</div>
             </div>
