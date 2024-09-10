@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-
+// the initial state of the user is null but here set to true until the frontend design is done.
 const userAuthSlice = createSlice({
   name: 'userAuth',
   initialState: {
