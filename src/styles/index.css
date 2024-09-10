@@ -43,6 +43,10 @@ body {
   flex-grow: 1;
 }
 
+.myprofile-div-outer {
+  background: orange;
+}
+
 @media (min-width: 768px) {
   .App {
     flex-direction: row;

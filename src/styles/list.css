@@ -1,5 +1,28 @@
 .list-page-outer {
-  background: blue;
   width: 100%;
   height: 100%;
+}
+
+.tiles-div-outer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-template-rows: auto;
+}
+
+.each-product-tile {
+  display: flex;
+  flex-direction: column;
+}
+
+.listpage-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+img.product-image {
+  width: 200px;
+  height: 200px;
 }

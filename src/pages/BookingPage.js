@@ -1,6 +1,8 @@
+import BookItem from '../components/BookItem';
+
 const BookingPage = () => (
   <div className="booking-page-outer">
-    Booking page
+    <BookItem />
   </div>
 );
 

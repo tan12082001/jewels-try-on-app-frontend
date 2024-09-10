@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 const NavigationBar = () => {
   const navLinks = [
     {
-      to: '/',
-      label: 'Models',
+      to: '/home',
+      label: 'Jewelery',
     },
     {
       to: '/bookTryOn',
