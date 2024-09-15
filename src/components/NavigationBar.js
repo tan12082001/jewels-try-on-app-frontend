@@ -11,19 +11,19 @@ const NavigationBar = () => {
       label: 'BookTryOn',
     },
     {
-      to: 'myFavourites',
+      to: '/myFavourites',
       label: 'Favourites',
     },
     {
-      to: 'myOrders',
+      to: '/myOrders',
       label: 'My Orders',
     },
     {
-      to: 'myBookings',
+      to: '/myBookings',
       label: 'My Bookings',
     },
     {
-      to: 'contact',
+      to: '/contact',
       label: 'Contact',
     },
   ];

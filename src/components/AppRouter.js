@@ -22,21 +22,22 @@ const AppRouter = () => {
         {user ? (
           <>
             <CommonNavigation />
-            <NavigationBar />
-            <MyProfilePage />
-            <div className="app-main-content-outer">
-              <Routes>
-                <Route path="/" element={<LandingPage />} />
-                <Route path="/signin" element={<SigninPage />} />
-                <Route path="/home" element={<ListPage />} />
-                <Route path="/details" element={<DetailsPage />} />
-                <Route path="/bookTryOn" element={<BookingPage />} />
-                <Route path="/myFavourites" element={<FavouritesPage />} />
-                <Route path="/myOrders" element={<OrdersPage />} />
-                <Route path="/myBookings" element={<MyBookingsPage />} />
-                <Route path="/contact" element={<ContactPage />} />
-                <Route path="/myprofile" element={<MyProfilePage />} />
-              </Routes>
+            <div className="sidenav-and-main-content-div-outer">
+              <NavigationBar />
+              <div className="app-main-content-outer">
+                <Routes>
+                  <Route path="/" element={<LandingPage />} />
+                  <Route path="/signin" element={<SigninPage />} />
+                  <Route path="/home" element={<ListPage />} />
+                  <Route path="/details" element={<DetailsPage />} />
+                  <Route path="/bookTryOn" element={<BookingPage />} />
+                  <Route path="/myFavourites" element={<FavouritesPage />} />
+                  <Route path="/myOrders" element={<OrdersPage />} />
+                  <Route path="/myBookings" element={<MyBookingsPage />} />
+                  <Route path="/contact" element={<ContactPage />} />
+                  <Route path="/myprofile" element={<MyProfilePage />} />
+                </Routes>
+              </div>
             </div>
           </>
         ) : (

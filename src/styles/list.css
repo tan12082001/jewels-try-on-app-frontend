@@ -5,14 +5,9 @@
 
 .tiles-div-outer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   grid-template-rows: auto;
-}
-
-.each-product-tile {
-  display: flex;
-  flex-direction: column;
 }
 
 .listpage-inner {
@@ -25,4 +20,15 @@
 img.product-image {
   width: 200px;
   height: 200px;
+}
+
+.each-product-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+  color: black;
+  list-style: none;
+  padding: 10px;
 }
