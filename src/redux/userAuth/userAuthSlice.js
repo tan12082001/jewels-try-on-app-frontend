@@ -4,6 +4,7 @@ const userAuthSlice = createSlice({
   name: 'userAuth',
   initialState: {
     user: true,
+    mode: true,
   },
   reducers: {
     setUser: (state, action) => {
@@ -12,8 +13,11 @@ const userAuthSlice = createSlice({
     clearUser: (state) => {
       state.user = null;
     },
+    setLightDarkMode: (state) => {
+      state.mode = !state.mode;
+    },
   },
 });
 
-export const { setUser, clearUser } = userAuthSlice.actions;
+export const { setUser, clearUser, setLightDarkMode } = userAuthSlice.actions;
 export default userAuthSlice.reducer;

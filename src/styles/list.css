@@ -22,7 +22,8 @@ img.product-image {
   height: 200px;
 }
 
-.each-product-tile {
+.each-product-tile,
+.white-tile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,4 +32,30 @@ img.product-image {
   color: black;
   list-style: none;
   padding: 10px;
+}
+
+.light-tile {
+  background-color: rgb(194 159 159 / 20%);
+}
+
+button.light-dark-mode-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+}
+
+.toggle-on-icon,
+.toggle-off-icon {
+  font-size: 30px;
+}
+
+.list-page-h2-heading,
+.dark-title {
+  color: white;
+}
+
+.light-title {
+  color: black;
 }

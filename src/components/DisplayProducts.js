@@ -6,6 +6,7 @@ const DisplayProducts = () => {
   const dispatch = useDispatch();
 
   const products = useSelector((state) => state.products.products);
+  const mode = useSelector((state) => state.userAuth.mode);
   const repeatedproducts = [...products, ...products, ...products];
 
   useEffect(() => {
@@ -16,10 +17,10 @@ const DisplayProducts = () => {
 
   return (
     <div className="listpage-inner">
-      <h3>Now Trending</h3>
+      <h2 className={`list-page-h2-heading ${mode ? 'dark-title' : 'light-title'}`}>Now Trending</h2>
       <ul className="tiles-div-outer">
         {repeatedproducts.map((product) => (
-          <div className="each-product-tile" key={product.id}>
+          <div className={`each-product-tile ${mode ? 'white-tile' : 'light-tile'}`} key={product.id}>
             <img src={product.image} alt="jewel" className="product-image" />
             <li>
               Title:

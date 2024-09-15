@@ -15,6 +15,7 @@ import CommonNavigation from './CommonNavigation';
 
 const AppRouter = () => {
   const user = useSelector((state) => state.userAuth.user);
+  const mode = useSelector((state) => state.userAuth.mode);
 
   return (
     <BrowserRouter>
@@ -22,7 +23,7 @@ const AppRouter = () => {
         {user ? (
           <>
             <CommonNavigation />
-            <div className="sidenav-and-main-content-div-outer">
+            <div className={`sidenav-and-main-content-div-outer ${mode ? 'dark' : 'light'}`}>
               <NavigationBar />
               <div className="app-main-content-outer">
                 <Routes>

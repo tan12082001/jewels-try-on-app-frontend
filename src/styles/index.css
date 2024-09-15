@@ -81,6 +81,7 @@ button.user-logout-button {
   color: white;
   font-size: 16px;
   padding: 4px 14px;
+  border: none;
 }
 
 .navigation-bar-outer {
@@ -98,11 +99,17 @@ button.user-logout-button {
   text-align: center;
 }
 
-.sidenav-and-main-content-div-outer {
+.sidenav-and-main-content-div-outer,
+.dark {
   display: flex;
   background: var(--main-background-color);
   height: 100%;
   margin-top: 5%;
+}
+
+.light {
+  background: white;
+  color: black;
 }
 
 .navigation-elements a {
