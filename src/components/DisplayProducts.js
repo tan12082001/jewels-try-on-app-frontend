@@ -18,7 +18,6 @@ const DisplayProducts = () => {
   ];
   const products = useSelector((state) => state.products.products);
   const mode = useSelector((state) => state.userAuth.mode);
-  const repeatedproducts = [...products, ...products, ...products];
 
   useEffect(() => {
     if (products.length === 0) {
@@ -54,7 +53,7 @@ const DisplayProducts = () => {
         </h2>
       </motion.div>
       <ul className="tiles-div-outer">
-        {repeatedproducts.map((product) => (
+        {products.map((product) => (
           <div className={`each-product-tile ${mode ? 'white-tile' : 'light-tile'}`} key={product.id}>
             <img src={product.image} alt="jewel" className="product-image" />
             <li>
