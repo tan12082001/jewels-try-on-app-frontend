@@ -1,5 +1,18 @@
-.details-page-outer {
-  background: orange;
-  width: 100%;
-  height: 100%;
+.product-description-div-outer {
+  background: blue;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.back-button:hover {
+  background-color: white;
+  color: black;
 }

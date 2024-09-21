@@ -15,8 +15,8 @@ const NavigationBar = () => {
       label: 'Favourites',
     },
     {
-      to: '/myOrders',
-      label: 'My Orders',
+      to: '/myCart',
+      label: 'My Cart',
     },
     {
       to: '/myBookings',

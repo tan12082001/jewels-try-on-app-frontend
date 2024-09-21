@@ -7,15 +7,16 @@ import ContactPage from '../pages/ContactPage';
 import MyBookingsPage from '../pages/MyBookingsPage';
 import OrdersPage from '../pages/OrdersPage';
 import FavouritesPage from '../pages/FavouritesPage';
-import DetailsPage from '../pages/DetailsPage';
 import NavigationBar from './NavigationBar';
 import SigninPage from '../pages/SignInPage';
 import MyProfilePage from '../pages/ProfilePage';
 import CommonNavigation from './CommonNavigation';
+import ProductDescription from './ProductDescription';
 
 const AppRouter = () => {
   const user = useSelector((state) => state.userAuth.user);
   const mode = useSelector((state) => state.userAuth.mode);
+  const products = useSelector((state) => state.products.products);
 
   return (
     <BrowserRouter>
@@ -30,13 +31,13 @@ const AppRouter = () => {
                   <Route path="/" element={<LandingPage />} />
                   <Route path="/signin" element={<SigninPage />} />
                   <Route path="/home" element={<ListPage />} />
-                  <Route path="/details" element={<DetailsPage />} />
                   <Route path="/bookTryOn" element={<BookingPage />} />
                   <Route path="/myFavourites" element={<FavouritesPage />} />
-                  <Route path="/myOrders" element={<OrdersPage />} />
+                  <Route path="/myCart" element={<OrdersPage />} />
                   <Route path="/myBookings" element={<MyBookingsPage />} />
                   <Route path="/contact" element={<ContactPage />} />
                   <Route path="/myprofile" element={<MyProfilePage />} />
+                  <Route path="/product/:id" element={<ProductDescription products={products} />} />
                 </Routes>
               </div>
             </div>

@@ -64,6 +64,22 @@ button.light-dark-mode-button {
   animation: move 2s ease-in-out infinite;
 }
 
+button.product-like-button,
+button.product-to-cart-button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+svg.like-button-hearticon {
+  color: #ff008d;
+  font-size: 24px;
+}
+
+svg.cart-button-icon {
+  font-size: 24px;
+}
+
 @keyframes move {
   0% {
     opacity: 0;
