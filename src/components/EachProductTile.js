@@ -7,18 +7,20 @@ import { likeProduct, removeProductLike } from '../redux/userProfile/userProfile
 const EachProductTile = ({
   mode, product,
 }) => {
-  const { id, image, title, price } = product;
+  const {
+    id, image, title, price,
+  } = product;
   const dispatch = useDispatch();
   const likes = useSelector((state) => state.userProfile.likes);
-  const isLiked = likes.some((product) => product.id == id);
+  const isLiked = likes.some((product) => product.id === id);
 
   const handleProductLike = () => {
-    if(isLiked) {
-      dispatch(removeProductLike());
+    if (isLiked) {
+      dispatch(removeProductLike(product));
     } else {
       dispatch(likeProduct(product));
     }
-  }
+  };
   return (
     <div className={`each-product-tile ${mode ? 'white-tile' : 'light-tile'}`}>
       <img src={image} alt="jewel" className="product-image" />

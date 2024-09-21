@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const userProfileSlice = createSlice({
   name: 'userActivityData',
@@ -13,7 +13,7 @@ const userProfileSlice = createSlice({
       state.likes.push(action.payload); // Add liked product to the array
     },
     removeProductLike: (state, action) => {
-      state.likes = state.likes.filter(product => product.id !== action.payload.id); // Remove liked product
+      state.likes = state.likes.filter((product) => product.id !== action.payload.id);
     },
     getLikes: (state, action) => {
       state.likes = action.payload; // Set likes from API
@@ -22,7 +22,7 @@ const userProfileSlice = createSlice({
       state.cartItems.push(action.payload); // Add product to cart
     },
     removeProductFromCart: (state, action) => {
-      state.cartItems = state.cartItems.filter(product => product.id !== action.payload.id); // Remove product from cart
+      state.cartItems = state.cartItems.filter((product) => product.id !== action.payload.id);
     },
     getCartItems: (state, action) => {
       state.cartItems = action.payload; // Set cart items from API
@@ -32,7 +32,7 @@ const userProfileSlice = createSlice({
       state.bookings.push(action.payload); // Add product to bookings
     },
     removeProductFromBooking: (state, action) => {
-      state.bookings = state.bookings.filter(product => product.id !== action.payload.id); // Remove product from bookings
+      state.bookings = state.bookings.filter((product) => product.id !== action.payload.id);
     },
     getProductsToBook: (state, action) => {
       state.bookings = action.payload; // Set bookings from API

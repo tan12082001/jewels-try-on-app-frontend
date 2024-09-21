@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
 import { fetchProducts } from '../redux/api';
 import EachProductTile from './EachProductTile';
@@ -17,7 +17,7 @@ const DisplayProducts = () => {
   //   'Leather Bags',
   //   'Key Chains',
   // ];
-  const products = useSelector((state) => state.products.products);
+  const products = useSelector((state) => state.products.products, shallowEqual);
   const mode = useSelector((state) => state.userAuth.mode);
 
   useEffect(() => {
